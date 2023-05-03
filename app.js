@@ -5,13 +5,17 @@ var _ = require('lodash');
 
 const app = express();
 
+let recipes = []
+
+let initial = recipes.length === 0? "No Recipes to Show" : "My Recipes";
+
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get("/", function(req, res){
-    res.render("home")
+    res.render("home", {initialText: initial})
 
 });
 

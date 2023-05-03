@@ -1,37 +1,47 @@
 
+/*-----------------base selectors---------------*/
+
 body{
     background-color: #FFF8D6;
+    font-family: 'Indie Flower', cursive;
 }
-
-.brand{
-    font-size: 2rem;
-    width: 200px;
-    margin: 5px 10px;
-}
-
-.search-bar{
-    margin-left: auto;
-    margin-right: 0;
-    height: 25px;
-    border: none;
-}
-
 nav{
+    align-items: center;
+    background-color: #A4D0A4;
     display: flex;
     width: 100%;
-    background-color: #A4D0A4;
-    align-items: center;
+}
 
+/*-----------------class selectors---------------*/
+
+.brand{
+    font-size: 2.5rem;
+    margin: 5px 10px;
+    width: 200px;
+}
+
+.footer {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .glass{
     margin: 0 5px;
 }
 
-
-.footer {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
+.green-text{
+    font-weight: bold;
+    color: #617A55;
 }
+
+.search-bar{
+    border: none;
+    height: 25px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+/*-----------------ID's selectors---------------*/
