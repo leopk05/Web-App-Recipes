@@ -2,6 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 var _ = require('lodash');
+const mongoose = require('mongoose')
+
+mongoose.connect("mongodb://127.0.0.1:27017/recipes")
 
 const app = express();
 
@@ -15,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get("/", function(req, res){
-    res.render("home", {initialText: initial})
+    res.render("home", {initialText: initial, recipeList: recipes})
 
 });
 

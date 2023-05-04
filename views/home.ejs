@@ -6,7 +6,25 @@
     </div>
 
 
+    <div class="show-recipes">
+<!--        inside this div it must have a loop to give even or odd numbers, and based on this result it shows the color -->
+        <% for (let i = 0; i < recipeList.length;i++){ %>
+            <% if (i % 2 === 0){ %>
+                <div class="even">
 
+                </div>
+            <% } else { %>
+                    <div class="odd">
+
+                    </div>
+                <% } %>
+        <% } %>
+
+
+    </div>
+
+
+<!--    need to decide how the ejs will display the recipe, need to create the object with the image and "how to do", tomorrow i'll build it-->
 
 
 <%- include("./partials/footer") -%>
