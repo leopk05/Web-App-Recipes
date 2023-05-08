@@ -24,12 +24,7 @@ nav{
     padding: 0;
 }
 
-.choose::before {
-    content: 'Select image';
-    cursor: pointer;
-}
-
-.choose::-webkit-file-upload-button {
+input[type="file"] {
     display: none;
 }
 
@@ -56,11 +51,19 @@ nav{
     color: #617A55;
 }
 
+.image-space{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: white;
+}
+
 .odd{
     background-color: #FFF8D6;
     height: 200px;
     width: 100%;
 }
+
 
 .search-bar{
     border: none;
