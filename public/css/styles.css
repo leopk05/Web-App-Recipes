@@ -24,7 +24,13 @@ nav{
     padding: 0;
 }
 
-.choose {
+.choose::before {
+    content: 'Select image';
+    cursor: pointer;
+}
+
+.choose::-webkit-file-upload-button {
+    display: none;
 }
 
 .even{
