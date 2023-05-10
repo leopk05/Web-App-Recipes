@@ -1,24 +1,35 @@
 <%- include("./partials/header") -%>
 
+<div class="text-align">
     <h1 class="green-text text-center">Add a Recipe</h1>
 
 
-<div class="container-fluid">
-    <div class="row">
-
-        <div class="image-space col-6">
-        </div>
-
-        <div class="col-6">
-            <form action="">
-                <div>
-                    <label for="image" style="cursor:pointer;">Select Image</label>
-                    <input type="file" accept="image/*" name="image" id="image">
-                </div>
-            </form>
-        </div>
+    <div class="image-space">
+        <form action="">
+            <div>
+                <label for="image" class="plus-img" style="cursor:pointer;"><i class="fa-solid fa-plus fa-4x button-plus"></i></label>
+                <input type="file" accept="image/*" name="image" id="image">
+            </div>
+        </form>
     </div>
+
+    <div class="ingredients-area">
+        <h2 class="green-text">Ingredients</h2>
+        <form action="" class="let-flex">
+            <input type="text" class="ingredient-input" placeholder="Insert an Ingredient">
+            <input type="text" class="ingredient-input" placeholder="Insert an Ingredient">
+            <input type="text" class="ingredient-input" placeholder="Insert an Ingredient">
+
+            todo: probably the best way to generate input is to add all the names into an array, and if the array[-2] is filled, it generate another.
+
+        </form>
+
+
+    </div>
+
 </div>
+
+
 
 
 
