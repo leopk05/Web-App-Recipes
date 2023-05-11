@@ -42,7 +42,10 @@ app.get("/add-recipe", function(req, res){
 
 });
 
+app.post("/testando", function (req, res){
 
+    console.log(req.body.teste)
+})
 
 app.listen(3000, function() {
     console.log("Server started on port 3000");
