@@ -1,5 +1,6 @@
 let ingredient = document.querySelectorAll(".ingredient-input")
-let ingredientArea = document.querySelector(".let-flex");
+let ingredientArea = document.querySelector(".input-insert");
+
 
 
 
@@ -10,23 +11,30 @@ const myFunction = (e) => {
       input.classList.add("ingredient-input");
       input.name = "input";
       ingredientArea.appendChild(input);
-
       ingredient = document.querySelectorAll(".ingredient-input")
-      console.log(ingredient)
+      for (let i = 1; i < ingredient.length; i++){
+          ingredient[i].addEventListener("change", myFunction);
+      }
   }
 }
 
 
-
-
-// ingredient.forEach((item, index) => {
-//     item.addEventListener("change", myFunction)
-// })
-
 for (let i = 1; i < ingredient.length; i++){
     ingredient[i].addEventListener("change", myFunction);
-
-
 }
 
-console.log(ingredient)
+//need to make some validation in the front to prevent submit a recipe without image, ingredients and instruction
+
+const fileInput = document.getElementById("image");
+
+const divToAdd = document.querySelector("#where")
+
+
+fileInput.onchange = evt => {
+    const [file] = fileInput.files
+    if (file){
+        divToAdd.src = URL.createObjectURL(file)
+    }
+}
+
+//todo: need to find a way to resize the image and after this change i want to create a button to replace the image.

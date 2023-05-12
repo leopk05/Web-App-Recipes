@@ -48,8 +48,9 @@ nav{
 }
 
 .footer {
+    background-color: #FFF8D6;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     text-align: center;
     width: 100%;
 }
@@ -62,7 +63,11 @@ nav{
 
 /*-----------------Add Page---------------*/
 
-.image-space{
+.add-page{
+    padding-bottom: 10%;
+}
+
+.image-area{
     width: 150px;
     height: 150px;
     border-radius: 100%;
@@ -82,6 +87,7 @@ input[type="file"] {
     background-color: #F7E1AE;
     margin: 2% 15% 2% 0;
     border: none;
+    width: 100%;
 }
 
 .plus-img{
@@ -91,4 +97,10 @@ input[type="file"] {
 
 .text-align{
     margin: 0 2%;
+}
+
+.text-area{
+    background-color: #F7E1AE;
+    width: 100%;
+    resize: none;
 }

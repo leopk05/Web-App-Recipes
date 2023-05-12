@@ -44,7 +44,7 @@ app.get("/add-recipe", function(req, res){
 
 app.post("/testando", function (req, res){
 
-    console.log(req.body.teste)
+    console.log(req.body.input)
 })
 
 app.listen(3000, function() {
